@@ -1,7 +1,11 @@
 :root {
-  --bg-color: #fbfffc;
+  --white-color: #fbfffc;
+  --white-sh-color: #f5faf4;
   --text-color: #234625;
+  --text-sh-color: #39593b;
   --grey-color: #3d423d;
+  --grey-ti-color: #505550;
+  /* #f5faf4 */
 }
 * {
   margin: 0;
@@ -12,7 +16,8 @@ html {
   font-size: 62.5%;
 }
 body {
-  background-color: var(--bg-color);
+  background-color: var(--white-color);
+  font-family: "Inter", sans-serif;
 }
 
 .grid {
@@ -27,6 +32,7 @@ body {
 .primary-heading {
   color: var(--text-color);
   font-size: 3.6rem;
+  line-height: 1.5;
 }
 
 .margin-bottom-sm {
@@ -57,6 +63,6 @@ body {
 
 .btn:hover,
 .btn:active {
-  color: var(--bg-color);
+  color: var(--white-color);
   background-color: var(--text-color);
 }
