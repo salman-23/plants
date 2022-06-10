@@ -14,12 +14,14 @@
 
     <link rel="stylesheet" href="/css/general.css" />
     <link rel="stylesheet" href="/css/style.css" />
+
+    <script src="https://unpkg.com/phosphor-icons"></script>
     <title>Plants</title>
   </head>
   <body>
     <header class="header">
       <div class="logo">
-        <h1 class="primary-heading">Plants</h1>
+        <h1 class="heading-primary">Plants</h1>
       </div>
       <nav class="main-nav">
         <ul class="main-nav-list">
@@ -31,10 +33,10 @@
         </ul>
       </nav>
     </header>
-    <setcion class="setcion-hero">
-      <div class="hero grid grid-cols-2">
+    <section class="section-hero">
+      <div class="hero">
         <div class="hero-text">
-          <h1 class="primary-heading margin-bottom-md">Greenify Your Space</h1>
+          <h1 class="heading-primary margin-bottom-md">Greenify Your Space</h1>
           <p class="hero-desc">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
           </p>
@@ -45,9 +47,39 @@
         </div>
 
         <div class="image-container">
-          <img src="/img/hero.jpg" alt="" class="hero-image" />
+          <!-- <img src="/img/hero.jpg" alt="" class="hero-image" /> -->
+          <img src="/img/hero-2.png" alt="" class="hero-image" />
         </div>
       </div>
-    </setcion>
+    </section>
+    <section class="section-why">
+      <h2 class="heading-secondary text-center margin-bottom-md">
+        Why Use Plants?
+      </h2>
+      <div class="container grid grid-cols-4">
+        <div class="feature">
+          <i class="ph-globe feature-icon"></i>
+          <p class="feature-title">Eco Friendly</p>
+          <p class="feature-desc">Carbon neutral and plastic free</p>
+        </div>
+        <div class="feature">
+          <i class="ph-truck feature-icon"></i>
+          <p class="feature-title">Free Shipping</p>
+          <p class="feature-desc">On all orders over $50</p>
+        </div>
+        <div class="feature">
+          <i class="ph-headset feature-icon"></i>
+          <p class="feature-title">Friendly Services</p>
+          <p class="feature-desc">24/7 support and 30 day returns guarantee</p>
+        </div>
+        <div class="feature">
+          <i class="ph-package feature-icon"></i>
+          <p class="feature-title">Freshly picked</p>
+          <p class="feature-desc">
+            Plants will arrive direct from our greenhouse
+          </p>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
