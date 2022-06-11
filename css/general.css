@@ -4,6 +4,7 @@
   --text-color: #234625;
   --text-sh-color: #39593b;
   --text-ti-color: #4f6b51;
+  --text-ti-2-color: #e5e9e5;
   --grey-color: #3d423d;
   --grey-ti-color: #505550;
   /* #f5faf4 */
@@ -19,7 +20,8 @@ html {
 }
 body {
   background-color: var(--white-color);
-  font-family: "Inter", sans-serif;
+  font-family: "Merriweather", serif;
+  /* font-family: "Inter", sans-serif; */
 }
 
 .container {
@@ -29,14 +31,30 @@ body {
 }
 .grid {
   display: grid;
-  column-gap: 8rem;
-  row-gap: 2.4rem;
+
+  row-gap: 9.6rem;
+}
+
+.col-gap-sm {
+  column-gap: 4.4rem !important;
+}
+.col-gap-md {
+  column-gap: 6.8rem;
 }
 .grid-cols-2 {
   grid-template-columns: repeat(2, 1fr);
 }
+.grid-cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
 .grid-cols-4 {
   grid-template-columns: repeat(4, 1fr);
+}
+.grid-cols-5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+.grid-cols-6 {
+  grid-template-columns: repeat(6, 1fr);
 }
 
 .heading-primary {
@@ -53,6 +71,9 @@ body {
   font-weight: 700;
 }
 
+.margin-top-sm {
+  margin-top: 1.6rem !important;
+}
 .margin-bottom-sm {
   margin-bottom: 1.6rem !important;
 }
@@ -60,6 +81,11 @@ body {
 .margin-bottom-md {
   margin-bottom: 3.2rem !important;
 }
+
+.margin-bottom-lg {
+  margin-bottom: 4.8rem !important;
+}
+
 .padding-tb-sm {
   padding: 1.6rem 0 !important;
 }
@@ -77,7 +103,7 @@ body {
   display: block;
   text-decoration: none;
   font-size: 1.6rem;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.5;
   text-align: center;
   padding: 1.6rem 4.8rem;
@@ -93,4 +119,9 @@ body {
 .btn:active {
   color: var(--white-color);
   background-color: var(--text-color);
+}
+
+.btn-sm {
+  font-size: 1.4rem !important;
+  padding: 1.4rem 2.6rem !important;
 }

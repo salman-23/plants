@@ -12,8 +12,13 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="/css/general.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/general.css" />
+    <link rel="stylesheet" href="/css/queries.css" />
 
     <script src="https://unpkg.com/phosphor-icons"></script>
     <title>Plants</title>
@@ -47,16 +52,69 @@
         </div>
 
         <div class="image-container">
-          <!-- <img src="/img/hero.jpg" alt="" class="hero-image" /> -->
           <img src="/img/hero-2.png" alt="" class="hero-image" />
         </div>
       </div>
     </section>
+
+    <section class="categories">
+      <h2 class="heading-secondary text-center margin-bottom-lg">
+        Plants categories
+      </h2>
+      <div
+        class="container categories-grid grid-cols-3 col-gap-sm margin-bottom-md"
+      >
+        <div class="categories-card margin-bottom-md">
+          <img src="/img/categories/Indoor.jpg" alt="" class="categories-img" />
+
+          <h2 class="categories-title">Indoor</h2>
+          <a href="#" class="btn btn-sm margin-top-sm"> Show </a>
+        </div>
+        <div class="categories-card">
+          <img
+            src="/img/categories/Outdoor.jpg"
+            alt=""
+            class="categories-img"
+          />
+          <h2 class="categories-title">Outdoor</h2>
+          <a href="#" class="btn btn-sm margin-top-sm"> Show </a>
+        </div>
+
+        <div class="categories-card margin-bottom-md">
+          <img
+            src="/img/categories/Flowers-02.jpg"
+            alt=""
+            class="categories-img"
+          />
+          <h2 class="categories-title">Flowers</h2>
+          <a href="#" class="btn btn-sm margin-top-sm"> Show </a>
+        </div>
+
+        <div class="categories-card">
+          <img src="/img/categories/Orchid.jpg" alt="" class="categories-img" />
+          <h2 class="categories-title">Orchids</h2>
+          <a href="#" class="btn btn-sm margin-top-sm"> Show </a>
+        </div>
+
+        <div class="categories-card">
+          <img src="/img/categories/Tools.jpg" alt="" class="categories-img" />
+          <h2 class="categories-title">Tools</h2>
+          <a href="#" class="btn btn-sm margin-top-sm"> Show </a>
+        </div>
+
+        <div class="categories-card">
+          <img src="/img/categories/Pots.jpg" alt="" class="categories-img" />
+          <h2 class="categories-title">Pots</h2>
+          <a href="#" class="btn btn-sm margin-top-sm"> Show </a>
+        </div>
+      </div>
+    </section>
+
     <section class="section-why">
       <h2 class="heading-secondary text-center margin-bottom-md">
         Why Use Plants?
       </h2>
-      <div class="container grid grid-cols-4">
+      <div class="container grid grid-cols-4 col-gap-sm">
         <div class="feature">
           <i class="ph-globe feature-icon"></i>
           <p class="feature-title">Eco Friendly</p>
