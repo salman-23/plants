@@ -1,4 +1,7 @@
+/* *************** */
 /* Header Section */
+/* *************** */
+
 .header {
   display: flex;
   align-items: center;
@@ -34,7 +37,9 @@
   color: var(--text-color);
 }
 
+/* *************** */
 /* Hero  Section*/
+/* *************** */
 
 .section-hero {
   padding: 4.2rem 0 8rem 0;
@@ -70,8 +75,12 @@
 
 /* *************** */
 /* Section Why */
+/* *************** */
+
 .section-why {
-  padding: 2rem 8rem 0;
+  /* padding: 2rem 8rem 0; */
+  padding: 4.2rem 0 8rem 0;
+
   /* background-color: var(--white-sh-color); */
 }
 .feature {
@@ -99,6 +108,8 @@
 
 /* *************** */
 /* Categories */
+/* *************** */
+
 .categories-grid {
   display: grid;
   /* column-gap: 4.4rem; */
@@ -125,8 +136,6 @@
   width: 30rem;
   height: 42rem;
   margin: 0 auto;
-  /* padding: 1.6rem 3.2rem 3.2rem 1.6rem; */
-  /* padding: 3.2rem 4.8rem 4.8rem 4.8rem; */
 
   color: var(--grey-color);
   background-color: var(--white-sh-color);
@@ -144,4 +153,105 @@
 .categories-img-t {
   width: 30rem;
   height: 30rem;
+}
+
+/* *************** */
+/* Blog Posts */
+/* *************** */
+.blog-posts {
+  padding: 4.2rem 0 8rem 0;
+}
+
+.blog-grid {
+  display: grid;
+  grid-auto-columns: 1fr 1fr 1fr;
+  grid-auto-flow: column;
+  column-gap: 4.4rem;
+}
+
+.post-card {
+  display: flex;
+  flex-direction: column;
+}
+.post-title {
+  color: var(--text-color);
+  font-size: 1.6rem;
+  line-height: 1.5;
+  margin-bottom: 1.6rem;
+}
+.post-desc,
+.post-paragraph {
+  color: var(--grey-ti-color);
+  font-size: 1.4rem;
+}
+.post-paragraph {
+  margin-bottom: 1.6rem;
+}
+
+.post-img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* *************** */
+/* Banners */
+/* *************** */
+
+.banners {
+  padding: 4.2rem 0 8rem 0;
+  /* padding: 9.6rem 0; */
+
+  background-color: var(--white-sh-color);
+}
+
+.banner-grid {
+  display: grid;
+  grid-auto-columns: 1fr 1fr;
+  grid-auto-flow: column;
+}
+
+.heading-primary-banner {
+  font-size: 6.8rem;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  color: var(--text-color);
+  font-weight: 400;
+  margin-bottom: 3.2rem;
+  padding: 1rem;
+}
+
+.banner-text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  align-items: flex-start;
+}
+
+.banner-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  color: var(--grey-ti-color);
+  margin-bottom: 3.2rem;
+}
+
+.banner-btn:link,
+.banner-btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 1.6rem 3.2rem;
+  margin-bottom: 3.2rem;
+  text-align: center;
+
+  color: var(--white-sh-color);
+  background-color: var(--text-color);
+  cursor: pointer;
+}
+
+.banner-img,
+.banner-img-tips {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
