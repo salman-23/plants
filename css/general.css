@@ -32,14 +32,14 @@ body {
 .grid {
   display: grid;
 
-  row-gap: 9.6rem;
+  /* row-gap: 9.6rem; */
 }
 
 .col-gap-sm {
   column-gap: 4.4rem !important;
 }
 .col-gap-md {
-  column-gap: 6.8rem;
+  column-gap: 6.8rem !important;
 }
 .grid-cols-2 {
   grid-template-columns: repeat(2, 1fr);
@@ -57,18 +57,33 @@ body {
   grid-template-columns: repeat(6, 1fr);
 }
 
+.grid-rows-3 {
+  grid-template-rows: 1fr 0.25 fr 0.25 fr;
+}
+
+.row-gap-sm {
+  row-gap: 4.4rem !important;
+}
+
 .heading-primary {
   color: var(--text-color);
   font-size: 4.8rem;
   font-weight: 700;
   letter-spacing: 0.5px;
   line-height: 1;
+  margin-bottom: 3.2rem;
 }
 .heading-secondary {
   color: var(--text-color);
   font-size: 3.6rem;
   line-height: 1.1;
   font-weight: 700;
+}
+.subheading-sub {
+  color: var(--text-color);
+  font-size: 3.2rem;
+  line-height: 1.1;
+  font-weight: 400;
 }
 
 .margin-top-sm {
