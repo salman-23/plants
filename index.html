@@ -12,10 +12,6 @@
       rel="stylesheet"
     />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/general.css" />
     <link rel="stylesheet" href="/css/queries.css" />
@@ -26,15 +22,15 @@
   <body>
     <header class="header">
       <div class="logo">
-        <h1 class="heading-primary">Plants</h1>
+        <h1 class="logo-text">Plants</h1>
       </div>
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a href="#" class="main-nav-link">Section 1</a></li>
-          <li><a href="#" class="main-nav-link">Section 2</a></li>
-          <li><a href="#" class="main-nav-link">Section 3</a></li>
-          <li><a href="#" class="main-nav-link">Section 4</a></li>
-          <li><a href="#" class="main-nav-link">Sign Up</a></li>
+          <li><a href="#products" class="main-nav-link">Plants</a></li>
+          <li><a href="#testimonals" class="main-nav-link">Testimonals</a></li>
+          <li><a href="#blog" class="main-nav-link">Blog</a></li>
+      
+          <li><a href="#" class="main-nav-link signup">Sign Up</a></li>
         </ul>
       </nav>
     </header>
@@ -46,7 +42,7 @@
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
           </p>
           <div class="hero-btns">
-            <a href="#" class="btn margin-right-sm">Explore Now</a>
+            <a href="#products" class="btn margin-right-sm">Explore Now</a>
             <a href="#" class="btn">Learn More</a>
           </div>
         </div>
@@ -94,9 +90,9 @@
       </div>
     </section>
 
-    <section class="products">
+    <section class="products" id="products">
       <h2 class="heading-secondary text-center margin-bottom-md">
-        Most Selling Products
+        Most Selling Plants
       </h2>
 
       <div class="product-container products-grid products-grid-cols-3">
@@ -223,7 +219,7 @@
         <div class="feature">
           <i class="ph-headset feature-icon"></i>
           <p class="feature-title">Friendly Services</p>
-          <p class="feature-desc">24/7 support and 30 day returns guarantee</p>
+          <p class="feature-desc">24/7 Support and 30 day returns guarantee</p>
         </div>
         <div class="feature">
           <i class="ph-package feature-icon"></i>
@@ -235,9 +231,8 @@
       </div>
     </section>
 
-    <section class="testimonals">
-      <!-- <div class="testimonals-container testimonal-text-box"> -->
-      <!-- </div> -->
+    <section class="testimonals" id="testimonals">
+    
       <div class="testimonals-container">
         <h2 class="heading-primary margin-bottom-sm">Testimonals</h2>
         <h3 class="testimonals-subheading">What our customers say</h3>
@@ -300,16 +295,18 @@
       </div>
     </section>
 
-    <section class="blog-posts">
-      <div class="container">
-        <h2 class="heading-secondary margin-bottom-sm">Recent blogs posts</h2>
+    <section class="blog-posts" id="blog">
+      <div class="blog-container">
+        <h2 class="heading-secondary margin-bottom-sm">Recent blog posts</h2>
         <p class="post-paragraph">
           Need advice or just some information on how to care for plants?
         </p>
       </div>
-      <div class="container blog-grid">
+      <div class="blog-container blog-grid">
         <div class="post-card">
-          <img src="/img/posts/post-01.jpg" class="post-img" alt="" />
+          <div class="post-img-box">
+            <img src="/img/posts/post-01.jpg" class="post-img" alt="" />
+          </div>
           <p class="post-title">
             <strong>
               Feel the Soil to Know How Often to Water Your Plants
@@ -324,9 +321,7 @@
         </div>
 
         <div class="post-card">
-          <div class="post-img-box">
-            <img src="/img/posts/post-02.jpg" class="post-img" alt="" />
-          </div>
+          <img src="/img/posts/post-02.jpg" class="post-img" alt="" />
           <p class="post-title">
             <strong>
               It’s Better to Underwater Your Plants Than Overwater Them
@@ -341,7 +336,9 @@
         </div>
 
         <div class="post-card">
-          <img src="/img/posts/post-3.jpg" class="post-img" alt="" />
+          <div class="post-img-box">
+            <img src="/img/posts/post-3.jpg" class="post-img" alt="" />
+          </div>
           <p class="post-title">
             <strong> Smaller Plants Are the Fastest Growing Plants </strong>
           </p>
@@ -367,6 +364,79 @@
         </div>
         <div class="banner-img-box">
           <img src="/img/Plants-shop.jpg" alt="" class="banner-img" />
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="footer-container">
+        <div class="grid footer-grid">
+          <div class="footer-logo">
+            <p class="logo-f">Plants</p>
+            <ul class="footer-social-media">
+              <li>
+                <a href="#" class="footer-link">
+                  <i class="ph-instagram-logo footer-icons"></i>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link">
+                  <i class="ph-twitter-logo footer-icons"></i>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link">
+                  <i class="ph-facebook-logo footer-icons"></i>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link">
+                  <i class="ph-whatsapp-logo footer-icons"></i>
+                </a>
+              </li>
+            </ul>
+            <p class="footer-copy">
+              Copyright &copy; 2022 by Plants, Inc, All rights reserved
+            </p>
+          </div>
+
+          <div class="footer-contact">
+            <p class="footer-heading">Contact</p>
+            <ul class="footer-list">
+              <li>
+                <span class="footer-address">
+
+                  1653 Pike Street, San Diego, CA 92126</li>
+                </span>
+              <li>
+                <a class="footer-link" href="tel:+858-566-4754">858-566-4754</a>
+              </li>
+              <li>
+                <a class="footer-link" href="mailto:">info@plants.com</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-help">
+            <p class="footer-heading">Help</p>
+            <ul class="footer-list">
+              <li><a class="footer-link" href="#">FAQ</a></li>
+              <li><a class="footer-link" href="#">Returns & Refunds</a></li>
+              <li><a class="footer-link" href="#">Track your order</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-information">
+            <p class="footer-heading">Information</p>
+            <ul class="footer-list">
+              <li><a class="footer-link" href="#">About Us</a></li>
+              <li><a class="footer-link" href="#">Terms & Conditions</a></li>
+              <li><a class="footer-link" href="#">Privacy</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>

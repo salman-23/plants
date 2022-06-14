@@ -39,6 +39,9 @@
     /* width: 24rem; */
     height: 24rem;
   }
+  .blog-container {
+    padding: 4rem;
+  }
   .heading-primary-banner {
     font-size: 4.4rem;
   }
@@ -87,14 +90,42 @@
   .products-grid-cols-3 {
     grid-template-columns: repeat(2, 1fr);
   }
-
+  .blog-container {
+    /* max-width: 50rem;
+    margin: 0 auto;
+    padding: 0 2rem; */
+  }
   .blog-grid {
-    grid-auto-columns: 1fr;
-    grid-auto-flow: column;
+    /* grid-auto-columns: 1fr 1fr; */
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-auto-flow: row; */
   }
 
   .post-card {
-    margin-bottom: 4.4rem;
+    /* margin-bottom: 4.4rem; */
+    /* display: flex; */
+    /* width: 60rem; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* flex-wrap: wrap; */
+    width: 70%;
+
+    margin: 0 auto;
+  }
+  .post-img-box {
+    /* text-align: center; */
+  }
+  .post-img {
+    /* width: 80%; */
+    /* height: 90%; */
+    /* width: auto; */
+    /* object-fit: cover; */
+  }
+  .post-desc {
+    /* line-height: ; */
+    /* white-space: nowrap; */
+    /* overflow-wrap: break-word; */
+    /* word-break: break-all; */
   }
 }
 
@@ -120,10 +151,15 @@
     width: 45%;
     height: 45%;
   }
-
+  .blog-container {
+    max-width: 70rem;
+  }
   .blog-grid {
-    grid-auto-rows: 1fr;
-    grid-auto-flow: row;
+    /* grid-auto-rows: 1fr; */
+    /* grid-auto-flow: row; */
+    grid-template-columns: 1fr;
+    row-gap: 3.2rem;
+    /* grid-template-columns: 1fr; */
   }
 
   .banner-grid {
@@ -140,6 +176,10 @@
   }
   .categories-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .product-card {
+    width: 80%;
   }
 }
 
@@ -172,5 +212,42 @@
   }
   .products-grid-cols-3 {
     grid-template-columns: 1fr;
+  }
+  .product-card {
+    width: 70%;
+  }
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    /* column-gap: 4.2rem; */
+  }
+}
+
+/* Below 544px */
+
+@media (max-width: 34em) {
+  .grid {
+    row-gap: 4.8rem;
+  }
+  .grid-cols-2,
+  .grid-cols-3,
+  .grid-cols-4,
+  .products-grid,
+  .testimonal-grid
+  /* .blog-grid */ {
+    grid-template-columns: 1fr;
+    column-gap: 4.8rem;
+    row-gap: 4.8rem;
+  }
+  .product-card {
+    width: 60%;
+  }
+  .blog-grid {
+    /* grid-auto-columns: 1fr; */
+    /* grid-auto-flow: row; */
+    grid-template-columns: 1fr;
+  }
+  .post-img {
+    width: 100%;
+    /* object-fit: cover; */
   }
 }
