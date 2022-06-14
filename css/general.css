@@ -27,9 +27,9 @@ html {
 body {
   background-color: var(--white-color);
   background-color: #ffffff;
-  font-family: "Merriweather", serif;
   font-family: "Inter", sans-serif;
   /* overflow: hidden; */
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -125,7 +125,9 @@ body {
 
 .btn,
 .btn:link,
-.btn:visited {
+.btn:visited,
+.signup-btn:link,
+.signup-btn:visited {
   display: block;
   text-decoration: none;
   font-size: 1.6rem;
