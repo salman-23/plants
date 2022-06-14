@@ -99,7 +99,7 @@
   font-weight: 600;
   margin-top: 1.6rem;
   margin-left: 1.6rem;
-  color: var(--grey-color);
+  color: var(--text-color);
   text-decoration: none;
 }
 
@@ -115,6 +115,7 @@
   border-radius: 11px;
   color: var(--grey-color);
   background-color: var(--white-sh-color);
+  background-color: #f6fbf9;
   overflow: hidden;
 }
 
@@ -246,6 +247,48 @@
 }
 
 /* *************** */
+/* Testimonals */
+/* *************** */
+
+.testimonals {
+  background-color: var(--white-sh-color);
+}
+.testimonals-container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 6rem;
+}
+.testimonal-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 4.8rem;
+  column-gap: 6rem;
+}
+
+.testimonals-subheading {
+  color: var(--grey-color);
+  font-size: 2.4rem;
+  line-height: 1.1;
+  font-weight: 400;
+  margin-bottom: 4.4rem;
+}
+.testimonal-img {
+  width: 9.6rem;
+  margin-bottom: 1.6rem;
+  border-radius: 50%;
+}
+.testimonal-text {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  margin-bottom: 1.6rem;
+  color: var(--text-color);
+}
+.testimonal-name {
+  font-size: 1.6rem;
+  color: var(--grey-color);
+}
+
+/* *************** */
 /* Blog Posts */
 /* *************** */
 .blog-posts {
@@ -310,6 +353,7 @@
   font-weight: 500;
   margin-bottom: 3.2rem;
   padding: 1rem;
+  /* white-space: pre-wrap; */
 }
 
 .banner-text-box {
