@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+    name="description"
+    content="Plants is an online plants shop."
+  />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,7 +21,9 @@
     <link rel="stylesheet" href="/css/queries.css" />
 
     <script src="https://unpkg.com/phosphor-icons"></script>
-    <title>Plants</title>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <title>Plants &verbar; Greenify Your Space</title>
   </head>
   <body>
     <header class="header">
@@ -26,29 +32,33 @@
       </div>
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a href="#products" class="main-nav-link">Plants</a></li>
+          <li><a href="#plants" class="main-nav-link">Plants</a></li>
           <li><a href="#testimonals" class="main-nav-link">Testimonals</a></li>
           <li><a href="#blog" class="main-nav-link">Blog</a></li>
       
-          <li><a href="#" class="main-nav-link signup">Sign Up</a></li>
+          <li><a href="#signup" class="signup">Sign Up</a></li>
         </ul>
       </nav>
     </header>
     <section class="section-hero">
-      <div class="hero">
+      <div class="container hero">
         <div class="hero-text">
-          <h1 class="heading-primary">Greenify Your Space</h1>
+          <h1 class="heading-primary heading-hero">Greenify Your Space</h1>
           <p class="hero-desc">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
+            Shop your favorite plants, flowers, orchids, seeds, and more... 
           </p>
           <div class="hero-btns">
-            <a href="#products" class="btn margin-right-sm">Explore Now</a>
-            <a href="#" class="btn">Learn More</a>
+            <a href="#signup" class="btn btn-hero-filled">Join Now</a>
+            <a href="#plants" class="btn btn-hero-outlined">Explore 
+              <span>
+                &rarr;
+              </span>
+            </a>
           </div>
         </div>
 
         <div class="image-container">
-          <img src="/img/hero-2.png" alt="" class="hero-image" />
+          <img class="hero-img" src="/img/hero-img-2.jpg" alt="Green plant in clear glass vase">
         </div>
       </div>
     </section>
@@ -59,14 +69,14 @@
       </h2>
       <div class="categories-container categories-grid margin-bottom-md">
         <div class="categories-card">
-          <img src="/img/categories/indoor.jpg" alt="" class="categories-img" />
+          <img src="/img/categories/indoor.jpg" alt="Indoor category photo of green plant on white ceramic pot" class="categories-img" />
           <a href="#" class="categories-title">Indoor &rarr;</a>
         </div>
 
         <div class="categories-card">
           <img
             src="/img/categories/outdoor.jpg"
-            alt=""
+            alt="Outdoor category photo of green plant on white ceramic pot"
             class="categories-img"
           />
           <a href="#" class="categories-title">Outdoor &rarr;</a>
@@ -76,7 +86,7 @@
           <div class="categories-img-box">
             <img
               src="/img/categories/flowers.jpg"
-              alt=""
+              alt="Flowers category photo of white rose in clear glass vase"
               class="categories-img"
             />
           </div>
@@ -84,14 +94,14 @@
         </div>
 
         <div class="categories-card">
-          <img src="/img/categories/orchid.jpg" alt="" class="categories-img" />
+          <img src="/img/categories/orchid.jpg" alt="Orchids category photo of white moth orchids in bloom" class="categories-img" />
           <a href="#" class="categories-title">Orchids &rarr;</a>
         </div>
       </div>
     </section>
 
-    <section class="products" id="products">
-      <h2 class="heading-secondary text-center margin-bottom-md">
+    <section class="products" id="plants">
+      <h2 class="product-container heading-secondary products-margin text-center">
         Most Selling Plants
       </h2>
 
@@ -101,7 +111,7 @@
             <img
               class="product-img"
               src="/img/products/snake-plant.jpg"
-              alt=""
+              alt="Photo of snake plant"
             />
           </div>
           <div class="product-text-box">
@@ -118,7 +128,7 @@
             <img
               class="product-img"
               src="/img/products/aloe-vera-plant.jpg"
-              alt=""
+              alt="Photo of aloe vera"
             />
           </div>
 
@@ -136,7 +146,7 @@
             <img
               class="product-img"
               src="/img/products/monstera-deliciosa.jpg"
-              alt=""
+              alt="Photo of monstera deliciosa"
             />
           </div>
 
@@ -151,7 +161,7 @@
 
         <div class="product-card">
           <div class="product-img-box">
-            <img class="product-img" src="/img/products/cactus.jpg" alt="" />
+            <img class="product-img" src="/img/products/cactus.jpg" alt="Photo of cactus" />
           </div>
 
           <div class="product-text-box">
@@ -168,7 +178,7 @@
             <img
               class="product-img"
               src="/img/products/fiddle-fig.jpg"
-              alt=""
+              alt="Photo of fiddle fig"
             />
           </div>
 
@@ -186,7 +196,7 @@
             <img
               class="product-img"
               src="/img/products/peace-lily.jpg"
-              alt=""
+              alt="Photo of peace lily"
             />
           </div>
 
@@ -202,7 +212,7 @@
     </section>
 
     <section class="section-why">
-      <h2 class="heading-secondary text-center margin-bottom-md">
+      <h2 class="container text-center heading-secondary margin-bottom-md">
         Why Use Plants?
       </h2>
       <div class="container grid grid-cols-4 col-gap-sm">
@@ -234,14 +244,14 @@
     <section class="testimonals" id="testimonals">
     
       <div class="testimonals-container">
-        <h2 class="heading-primary margin-bottom-sm">Testimonals</h2>
+        <h2 class="heading-secondary margin-bottom-sm">Testimonals</h2>
         <h3 class="testimonals-subheading">What our customers say</h3>
         <div class="testimonal-grid">
           <div class="testimonal-card">
             <img
               class="testimonal-img"
               src="/img/testimonals/matthew-williams.jpg"
-              alt=""
+              alt="Photo of matthew williams"
             />
             <blockquote class="testimonal-text">
               I got a monstera deliciosa and it is stunning!! So worth the
@@ -255,7 +265,7 @@
             <img
               class="testimonal-img"
               src="/img/testimonals/tracy-simms.jpg"
-              alt=""
+              alt="Photo of tracy simms"
             />
             <blockquote class="testimonal-text">
               Their plants are always lush, healthy and as pictured. They
@@ -269,7 +279,7 @@
             <img
               class="testimonal-img"
               src="/img/testimonals/sara-ellis.jpg"
-              alt=""
+              alt="Photo sara ellis"
             />
             <blockquote class="testimonal-text">
               The plants, the shipping and the customer service is perfect.
@@ -283,7 +293,7 @@
             <img
               class="testimonal-img"
               src="/img/testimonals/kevin-leone.jpg"
-              alt=""
+              alt="Photo of kevin leone"
             />
             <blockquote class="testimonal-text">
               They have the best price for larger plants. I am very happy with
@@ -295,9 +305,47 @@
       </div>
     </section>
 
+    <section class="signup-section" id="signup">
+      <div class="form-container">
+        <div class="sign-gird-cols-2">
+        <div class="signup-text-box">
+          <h2 class="heading-secondary signup-heading">Sign Up</h2>
+          <p class="signup-text">
+            Join Plants today for access to exclusive benefits, plant care tips,
+            and get 20% off your first order.
+          </p>
+          <form action="" class="signup-form ">
+            <div class="signup-grid">
+
+            <div>
+            <label for="name" class="signup-label">Full Name</label>
+            <input type="text" placeholder="John Wilson" id="name" class="signup-input" required>
+            </div>
+
+            <div>
+              <label for="password" class="signup-label">Password</label>
+              <input type="password" placeholder="Password" id="password" class="signup-input" required>
+              </div>
+  
+              <div>
+                <label for="email" class="signup-label">Email Address</label>
+                <input type="eamil" placeholder="email@example.com" id="email"  class="signup-input" required>
+                </div>
+                  <button class="btn btn-form">Submit</button>
+              </div>
+
+          </form>
+        </div>
+        <div class="signup-img-box">
+          <img src="/img/signup-img.jpg" alt="Photo of green plant on brown wooden vase" class="signup-img">
+        </div>
+        </div>
+      </div>
+      </section>
+
     <section class="blog-posts" id="blog">
       <div class="blog-container">
-        <h2 class="heading-secondary margin-bottom-sm">Recent blog posts</h2>
+        <h2 class="heading-secondary margin-bottom-sm">Recent Blog Posts</h2>
         <p class="post-paragraph">
           Need advice or just some information on how to care for plants?
         </p>
@@ -305,7 +353,7 @@
       <div class="blog-container blog-grid">
         <div class="post-card">
           <div class="post-img-box">
-            <img src="/img/posts/post-01.jpg" class="post-img" alt="" />
+            <img src="/img/posts/post-01.jpg" class="post-img" alt="Post Photo" />
           </div>
           <p class="post-title">
             <strong>
@@ -321,7 +369,7 @@
         </div>
 
         <div class="post-card">
-          <img src="/img/posts/post-02.jpg" class="post-img" alt="" />
+          <img src="/img/posts/post-02.jpg" class="post-img" alt="Post Photo" />
           <p class="post-title">
             <strong>
               It’s Better to Underwater Your Plants Than Overwater Them
@@ -337,7 +385,7 @@
 
         <div class="post-card">
           <div class="post-img-box">
-            <img src="/img/posts/post-3.jpg" class="post-img" alt="" />
+            <img src="/img/posts/post-3.jpg" class="post-img" alt="Post Photo" />
           </div>
           <p class="post-title">
             <strong> Smaller Plants Are the Fastest Growing Plants </strong>
@@ -352,18 +400,19 @@
       </div>
     </section>
 
+
+
     <section class="banners">
       <div class="container banner-grid col-gap-sm">
         <div class="banner-text-box">
-          <h1 class="heading-primary-banner">Join Our Reward Program</h1>
+          <h1 class="heading-primary-banner"> Our Subscription Plans</h1>
           <p class="banner-text">
-            Join Plants today for access to exclusive benefits, plant care tips,
-            and get 20% off your first order.
+            Subscribe today to one of our different plans and we will ship a new plant to your door step each month. Also, you will enjoy next day expedited delivery.
           </p>
           <a class="banner-btn" href="#">Learn More</a>
         </div>
         <div class="banner-img-box">
-          <img src="/img/Plants-shop.jpg" alt="" class="banner-img" />
+          <img src="/img/Plants-shop.jpg" alt="Photo of two green leafed plants in brown pot" class="banner-img" />
         </div>
       </div>
     </section>
@@ -376,25 +425,32 @@
             <ul class="footer-social-media">
               <li>
                 <a href="#" class="footer-link">
-                  <i class="ph-instagram-logo footer-icons"></i>
+        
+                  <ion-icon class="footer-icons" name="logo-instagram"></ion-icon>
                 </a>
               </li>
 
               <li>
                 <a href="#" class="footer-link">
-                  <i class="ph-twitter-logo footer-icons"></i>
+                  <ion-icon class="footer-icons" name="logo-whatsapp"></ion-icon>
                 </a>
               </li>
 
               <li>
                 <a href="#" class="footer-link">
-                  <i class="ph-facebook-logo footer-icons"></i>
+                  <ion-icon class="footer-icons" name="logo-twitter"></ion-icon>
                 </a>
               </li>
 
               <li>
                 <a href="#" class="footer-link">
-                  <i class="ph-whatsapp-logo footer-icons"></i>
+                  <ion-icon class="footer-icons" name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link">
+                  <ion-icon class="footer-icons" name="logo-pinterest"></ion-icon>
                 </a>
               </li>
             </ul>

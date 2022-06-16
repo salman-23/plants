@@ -1,19 +1,12 @@
 :root {
   --white-color: #fbfffc;
-  /* --white-sh-color: #f5faf4; */
-  --white-sh-color: #e0f3ec;
-  /* --text-color: #234625; */
+  --white-shade-color: #e0f3ec;
   --text-color: #0f140d;
-  --text-sh-color: #39593b;
-  --text-ti-color: #4f6b51;
-  --text-ti-2-color: #e5e9e5;
-  /* --grey-color: #3d423d; */
   --grey-color: #545454;
-  --grey-ti-color: #7a7a7a;
-  /* --grey-ti-color: #505550; */
-  --grey-ti-2-color: #afafaf;
-  /* #f5faf4 */
+  --grey-tint-color: #7a7a7a;
+  --grey-tint-2-color: #afafaf;
   --green-color: #54b592;
+  --green-shade-color: #439175;
 }
 
 * {
@@ -26,9 +19,7 @@ html {
 }
 body {
   background-color: var(--white-color);
-  background-color: #ffffff;
   font-family: "Inter", sans-serif;
-  /* overflow: hidden; */
   scroll-behavior: smooth;
 }
 
@@ -39,8 +30,6 @@ body {
 }
 .grid {
   display: grid;
-
-  /* row-gap: 9.6rem; */
 }
 
 .col-gap-sm {
@@ -128,7 +117,7 @@ body {
 .btn:visited,
 .signup-btn:link,
 .signup-btn:visited {
-  display: block;
+  display: inline-block;
   text-decoration: none;
   font-size: 1.6rem;
   font-weight: 700;
@@ -139,19 +128,32 @@ body {
   border-radius: 9px;
   color: var(--white-color);
   background-color: var(--green-color);
-  /* border: 1px solid var(--text-color); */
+  border: none;
+  font-family: inherit;
+
   cursor: pointer;
-  transition: all 0.3s ease-out;
+  transition: all 0.3s;
 }
 
 .btn:hover,
 .btn:active {
   color: var(--white-color);
-  background-color: var(--green-color);
+  background-color: var(--green-shade-color);
 }
 
 .btn-sm {
   display: inline-block !important;
   font-size: 1.4rem !important;
   padding: 1.4rem 2.6rem !important;
+}
+.btn-form {
+  margin: 0;
+  background-color: var(--green-color);
+  color: var(var(--white-shade-color));
+  align-self: end;
+  padding: 1.2rem;
+}
+.btn-form:hover {
+  background: var(--white-color);
+  background-color: var(--green-shade-color);
 }
